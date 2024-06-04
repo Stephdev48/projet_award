@@ -1,6 +1,6 @@
 <?php
 
-require 'controller/main.controller.php';
+require 'controllers/main.controller.php';
 
 switch ($_GET['page']){
     case 'home': 
