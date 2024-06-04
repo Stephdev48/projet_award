@@ -1,5 +1,7 @@
 <?php
 
+require 'main.model.php';
+
 function homeDisplay() {
     require 'views/header.view.php';
     require 'views/home.view.php';
