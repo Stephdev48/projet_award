@@ -1,21 +1,25 @@
 <?php
 
-require 'controller/mainController.php';
+require 'controller/main.controller.php';
 
 switch ($_GET['page']){
     case 'home': 
         homeDisplay();
         break ;
-    case 'votepage':
+    case 'vote':
+        voteDisplay();
         break ;
     case 'board' :
+        boardDisplay();
         break ;
-    case 'error' :
+     case 'results' :
+        resultsDisplay();
         break ;
-    case 'results' :
-        break ;
+    
+   
 
-    default : throw new Exception('Paramètre invalide');
+    default: 
+        throw new Exception ('Paramètre invalide !');
 }
 
 ?>
