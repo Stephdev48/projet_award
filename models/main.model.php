@@ -4,81 +4,88 @@ function getStudents(){
     $students = array(
         array(
             'id' => 1,
-            'name' => 'John',
-            'avatar' => '',
+            'name' => 'Noé',
+            'avatar' => 'public/images/Apprenants/Noé.png',
         ),
         array(
             'id' => 2,
-            'name' => 'Jane',
-            'avatar' => '',
+            'name' => 'Stéphane',
+            'avatar' => 'public/images/Apprenants/stephane.png',
         ),
         array(
             'id' => 3,
-            'name' => 'Jack',
-            'avatar' => '',
+            'name' => 'Vincent',
+            'avatar' => 'public/images/Apprenants/vincent.png',
         ),
         array(
             'id' => 4,
-            'name' => 'Jill',
-            'avatar' => '',
+            'name' => 'Martin',
+            'avatar' => 'public/images/Apprenants/martin.png',
         ),
         array(
             'id' => 5,
-            'name' => 'Joe',
-            'avatar' => '',
+            'name' => 'Killian',
+            'avatar' => 'public/images/Apprenants/kilian.png',
         ),
         array(
             'id' => 6,
-            'name' => 'Jill',
-            'avatar' => '',
+            'name' => 'Cyril',
+            'avatar' => 'public/images/Apprenants/cyril.png',
         ),
         array(
             'id' => 7,
-            'name' => 'Joe',
-            'avatar' => '',
+            'name' => 'Christophe',
+            'avatar' => 'public/images/Apprenants/Christophe.png',
         ),
         array(
             'id' => 8,
-            'name' => 'Jill',
-            'avatar' => '',
+            'name' => 'Barnabé',
+            'avatar' => 'public/images/Apprenants/barnabe.png',
         ),
         array(
             'id' => 9,
-            'name' => 'Joe',
-            'avatar' => '',
+            'name' => 'Annaelle',
+            'avatar' => 'public/images/Apprenants/annaelle.png',
+        ),
+        array(
+            'id' => 10,
+            'name' => 'Agustin',
+            'avatar' => 'public/images/Apprenants/agustin.png',
         ),
     );
+    return $students;
 }
 
 function getTeachers(){
     $teachers = array(
         array(
             'id' => 1,
-            'name' => 'John',
-            'avatar' => '',
+            'name' => 'Cedric',
+            'avatar' => 'public/images/Formateurs/cedric.png',
         ),
         array(
             'id' => 2,
-            'name' => 'Jane',
-            'avatar' => '',
+            'name' => 'Christophe',
+            'avatar' => 'public/images/Formateurs/Christophe.png',
         ),
         array(
             'id' => 3,
-            'name' => 'Jack',
-            'avatar' => '',
+            'name' => 'Laetitia',
+            'avatar' => 'public/images/Formateurs/laetitia.png',
         ),
         array(
             'id' => 4,
-            'name' => 'Jill',
-            'avatar' => '',
+            'name' => 'Luc',
+            'avatar' => 'public/images/Formateurs/luc.png',
         ),
         array(
             'id' => 5,
-            'name' => 'Joe',
-            'avatar' => '',
+            'name' => 'Tony',
+            'avatar' => 'public/images/Formateurs/tony.png',
         ),
 
     );
+    return $teachers;
 
 }
 
@@ -148,6 +155,8 @@ function getTeachersCaracters(){
             
         ),
     );
+    
+    return $teachersCaracters;
 }
 
 ?>

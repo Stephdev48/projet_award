@@ -1,6 +1,6 @@
 <?php
 
-require 'main.model.php';
+require 'models/main.model.php';
 
 function homeDisplay() {
     require 'views/header.view.php';

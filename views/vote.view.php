@@ -1,9 +1,12 @@
-
 <form action="" method="post">
 
     <div class="students">
         <h1>Apprenants</h1>
         <?php
+        $studentsCaracters = getStudentsCaracters();
+        $students = getStudents();
+        $teachersCaracters = getTeachersCaracters();
+        $teachers = getTeachers();
         foreach($studentsCaracters as $studentCaracter){
             echo "
             <h2>".$studentCaracter['caracter']."</h2>";
