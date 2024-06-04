@@ -1,3 +1,3 @@
 
-<a href="views/vote.view.php">VOTER !</a>
+<a href="index.php?page=vote">VOTER !</a>
 

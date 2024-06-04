@@ -93,42 +93,42 @@ function getStudentsCaracters(){
     $studentsCaracters = array(
         array(
             'id' => 1,
-            'caracter' => 'John',
+            'caracter' => 'Le radieu',
             
         ),
         array(
             'id' => 2,
-            'caracter' => 'Jane',
+            'caracter' => 'L\'ami de tous',
             
         ),
         array(
             'id' => 3,
-            'caracter' => 'Jack',
+            'caracter' => 'Le fêtard',
             
         ),
         array(
             'id' => 4,
-            'caracter' => 'Jill',
+            'caracter' => 'Le titan du travail',
             
         ),
         array(
             'id' => 5,
-            'caracter' => 'Joe',
+            'caracter' => 'Le designer',
             
         ),
         array(
             'id' => 6,
-            'caracter' => 'Jill',
+            'caracter' => 'Le codeur émérite',
             
         ),
         array(
             'id' => 7,
-            'caracter' => 'Jill',
+            'caracter' => 'La fusée de l\'animation',
             
         ),
         array(
             'id' => 8,
-            'caracter' => 'Joe',
+            'caracter' => 'Le raleur ou grincheux',
         ),
         
     );
@@ -141,17 +141,17 @@ function getTeachersCaracters(){
     $teachersCaracters = array(
         array(
             'id' => 1,
-            'caracter' => 'John',
+            'caracter' => 'Le défenseur de la patience',
             
         ),
         array(
             'id' => 2,
-            'caracter' => 'Jane',
+            'caracter' => 'Le comique magistral',
             
         ),
         array(
             'id' => 3,
-            'caracter' => 'Jack',
+            'caracter' => 'L\'étourdi',
             
         ),
     );

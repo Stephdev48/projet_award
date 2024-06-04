@@ -1,4 +1,4 @@
-<form action="" method="post">
+<form action="index.php?page=results" method="post">
 
     <div class="students">
         <h1>Apprenants</h1>
@@ -36,4 +36,8 @@
         ?>
     </div>    
     
+
+<button type="submit"><a href="index.php?page=results">Envoyer</a></button>
+
+
 </form>
