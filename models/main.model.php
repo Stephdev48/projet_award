@@ -5,7 +5,7 @@ function getStudents(){
         array(
             'id' => 1,
             'name' => 'Noé',
-            'avatar' => 'public/images/Apprenants/Noé.png',
+            'avatar' => 'public/images/Apprenants/noe.png',
         ),
         array(
             'id' => 2,
@@ -25,7 +25,7 @@ function getStudents(){
         array(
             'id' => 5,
             'name' => 'Killian',
-            'avatar' => 'public/images/Apprenants/kilian.png',
+            'avatar' => 'public/images/Apprenants/killian.png',
         ),
         array(
             'id' => 6,
@@ -35,7 +35,7 @@ function getStudents(){
         array(
             'id' => 7,
             'name' => 'Christophe',
-            'avatar' => 'public/images/Apprenants/Christophe.png',
+            'avatar' => 'public/images/Apprenants/christophe.png',
         ),
         array(
             'id' => 8,
@@ -66,7 +66,7 @@ function getTeachers(){
         array(
             'id' => 2,
             'name' => 'Christophe',
-            'avatar' => 'public/images/Formateurs/Christophe.png',
+            'avatar' => 'public/images/Formateurs/christophe.png',
         ),
         array(
             'id' => 3,
@@ -89,8 +89,8 @@ function getTeachers(){
 
 }
 
-function getStudentsCaracters(){
-    $studentsCaracters = array(
+function getStudentsCharacters(){
+    $studentsCharacters = array(
         array(
             'id' => 1,
             'caracter' => 'Le radieu',
@@ -133,12 +133,12 @@ function getStudentsCaracters(){
         
     );
     
-    return $studentsCaracters;
+    return $studentsCharacters;
     
 }
 
-function getTeachersCaracters(){
-    $teachersCaracters = array(
+function getTeachersCharacters(){
+    $teachersCharacters = array(
         array(
             'id' => 1,
             'caracter' => 'Le défenseur de la patience',
@@ -156,7 +156,7 @@ function getTeachersCaracters(){
         ),
     );
     
-    return $teachersCaracters;
+    return $teachersCharacters;
 }
 
 ?>

@@ -3,18 +3,18 @@
     <div class="students">
         <h1>Apprenants</h1>
         <?php
-        $studentsCaracters = getStudentsCaracters();
+        $studentsCharacters = getStudentsCharacters();
         $students = getStudents();
-        $teachersCaracters = getTeachersCaracters();
+        $teachersCharacters = getTeachersCharacters();
         $teachers = getTeachers();
-        foreach($studentsCaracters as $studentCaracter){
+        foreach($studentsCharacters as $studentCharacter){
             echo "
-            <h2>".$studentCaracter['caracter']."</h2>";
+            <h2>".$studentCharacter['character']."</h2>";
         
         
         foreach($students as $student){
             echo "
-            <input type='radio' name='apprenants_".$studentCaracter['caracter']."' value='".$student['name']."'>";
+            <input type='radio' name='apprenants_".$studentCharacter['character']."' value='".$student['name']."'>";
         }
         
         }
@@ -24,20 +24,22 @@
     <div class="teachers">
         <h1>Intervenants</h1>
         <?php
-        foreach($teachersCaracters as $teacherCaracter){
+        foreach($teachersCharacters as $teacherCharacter){
             echo "
-            <h2>".$teacherCaracter['caracter']."</h2>";
+            <h2>".$teacherCharacter['character']."</h2>";
 
         foreach($teachers as $teacher){
             echo "
-            <input type='radio' name='intervenants_".$teacherCaracter['caracter']."' value='".$teacher['name']."'>";
+            <input type='radio' name='intervenants_".$teacherCharacter['character']."' value='".$teacher['name']."'>";
         }    
         }
         ?>
     </div>    
     
 
-<button type="submit"><a href="index.php?page=results">Envoyer</a></button>
+<button type="submit">
+    <a href="index.php?page=results">Envoyer</a>
+</button>
 
 
 </form>
