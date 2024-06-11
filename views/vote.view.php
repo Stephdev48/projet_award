@@ -2,37 +2,48 @@
 
     <div class="students">
         <h1>Apprenants</h1>
-        <?php
-        $studentsCharacters = getStudentsCharacters();
-        $students = getStudents();
-        $teachersCharacters = getTeachersCharacters();
-        $teachers = getTeachers();
-        foreach($studentsCharacters as $studentCharacter){
-            echo "
-            <h2>".$studentCharacter['character']."</h2>";
-        
-        
-        foreach($students as $student){
-            echo "
-            <input type='radio' name='apprenants_".$studentCharacter['character']."' value='".$student['name']."'>";
-        }
-        
-        }
-        ?>
+        <div>
+            <?php
+                $studentsCharacters = getStudentsCharacters();
+                $students = getStudents();
+                foreach($studentsCharacters as $studentCharacter){
+                    echo "
+                    <h2>".$studentCharacter['nom_cat']."</h2>
+                    <div class='d-flex flex-wrap'>";
+                
+                        foreach($students as $student){
+                            echo "<span>
+                                    <img src='".$student['url_avatar']."' alt='avatar' width='150px'/>
+                                    <div class='d-flex flex-row'>
+                                        <h2>".$student['prenom']."</h2>
+                                        <input type='radio' name='apprenants_".$studentCharacter['nom_cat']."' value='".$student['nom']."'>
+                                    </div>
+                                </span>";
+                        }
+
+                    echo "</div>";
+                }
+            ?>
+        </div>
     </div>
 
     <div class="teachers">
         <h1>Intervenants</h1>
         <?php
-        foreach($teachersCharacters as $teacherCharacter){
-            echo "
-            <h2>".$teacherCharacter['character']."</h2>";
+            $teachersCharacters = getTeachersCharacters();
+            $teachers = getTeachers();
 
-        foreach($teachers as $teacher){
-            echo "
-            <input type='radio' name='intervenants_".$teacherCharacter['character']."' value='".$teacher['name']."'>";
-        }    
-        }
+            foreach($teachersCharacters as $teacherCharacter){
+                echo "
+                <h2>".$teacherCharacter['nom_cat']."</h2>
+                <div class='d-flex flex-wrap'>";
+                    foreach($teachers as $teacher){
+                        echo "<img src='".$teacher['url_avatar']."' alt='avatar'/>
+                        <h2>".$teacher['prenom']."</h2>
+                        <input type='radio' name='intervenants_".$teacherCharacter['nom_cat']."' value='".$teacher['nom']."'>";
+                    }   
+                echo "</div>"; 
+            }
         ?>
     </div>    
     
