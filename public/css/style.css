@@ -1,15 +1,92 @@
-.body{
-    background-color: #dee2e6;
+html, body{
+    font-family: 'Roboto';
 }
 
-.header{
-    background-color: #adb5bd;
+nav a {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-.header__title{
-    color: #f8f9fa;
+nav a:hover{
+    background-color: rgba(222, 222, 222, 0.734);
 }
 
-.footer{
+.nav_background_color{
+    background-color: rgba(222, 222, 222, 0.734);
+}
+
+.img_carte_noire{
+    margin-left: 30px;
+}
+
+.main_background{
+    background-color: black;
+}
+
+.header_link_wp{
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.header_link_wp:hover{
     background-color: grey;
+}
+
+.humeur{
+    margin-top: 50px;
+}
+
+hr{
+    height: 2px;
+}
+
+.inscription{
+    background-color: #584641;
+    color: white;
+    padding: 2.5%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nomprenom{
+    background-color: #D9D9D9;
+}
+
+.btn_inscription{
+    background-color:#A39E9E;
+    padding: 2%;
+}
+
+.btn_inscription a{
+    text-decoration: none;
+    color: black;
+}
+
+.start_vote{
+    background-color: #584641;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 220px;
+    margin-bottom: 220px;
+}
+
+.start_vote:hover{
+    background-color: grey;
+}
+
+.arrow_ancre{
+    margin-top: 35px;
+    margin-bottom: 70px;
+    margin-right: 70px;
+}
+
+.resultats_apprenants{
+    margin-top: 70px;
+}
+
+.resultats_formateurs{
+    margin-top: 70px;
+    margin-bottom: 70px;
 }

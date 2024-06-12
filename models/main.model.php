@@ -27,3 +27,15 @@ function getTeachersCharacters(){
     $teachersCharacters = $query_teacherscharacters->fetchAll(PDO::FETCH_ASSOC);
     return $teachersCharacters;
 }
+
+function insertVotes(){
+    // $query_insertvotes = $GLOBALS["pdo"]->query("INSERT INTO vote (id_cand, id_cat, email) VALUES ('$_POST['']', '$_POST[''], $_POST['candidat_email']) WHERE ;");
+    $insertvotes = $GLOBALS["pdo"]->prepare($query_insertvotes);
+    $insertvotes->execute();
+    return true;
+}
+
+    // $ajout_id_cat = ("INSERT INTO cat_fav (id_fav, id_cat) VALUES (:id_favori, :cat);");
+    // $arrayParam1 = array(':id_favori'=>$last_id_fav, ':cat'=>$cat);
+    // $result_id_fav = $pdo->prepare($ajout_id_cat);
+    // $result_id_fav->execute($arrayParam1);
