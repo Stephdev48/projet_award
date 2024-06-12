@@ -1,2 +1,9 @@
 # projet_award
-page résultats = top 3 et % pour tous les candidatspage de confirmation et remerciements avec CTA pour redirection landingpage WP
+
+## Création page en PHP et inclusion Wordpress via "the_content".
+
+## La page accueil.php comprend 1 champ 'email'.
+
+## La page application_du_vote.php comprend la liste des personnes à voter avec des listes déroulantes pour choisir son prix ? 
+
+## Arboscence en modèle MVC.

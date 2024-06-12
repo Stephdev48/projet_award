@@ -15,6 +15,11 @@ switch ($_GET['page']){
      case 'results' :
         resultsDisplay();
         break ;
+    
+   
+
     default: 
         throw new Exception ('Paramètre invalide !');
 }
+
+?>
