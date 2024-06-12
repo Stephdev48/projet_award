@@ -1,5 +1,7 @@
 <?php
 
+require 'models/main.model.php';
+
 function homeDisplay() {
     require 'views/header.view.php';
     require 'views/home.view.php';
@@ -19,7 +21,7 @@ function boardDisplay() {
 }
 
 function resultsDisplay() {
-    require 'views/header.view.php';
+    require 'views/header_resultats.view.php';
     require 'views/results.view.php';
     require 'views/footer.view.php';
 }

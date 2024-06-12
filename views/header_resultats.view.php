@@ -17,16 +17,13 @@
                 <div class="col-3">
                     <img src="public/images/header_star.png" alt="star-picture" width="250px">
                 </div>
-                <div class="col-6 d-flex align-items-center justify-content-center">
+                <div class="col-6 d-flex flex-column align-items-center justify-content-center">
                     <a href="http://localhost/wordpress_projet_awards/" class="fw-bold text-light header_link_wp">DWWM 48 AWARDS</a>
+                    <h1 class="fw-bold text-light">RESULTATS DES VOTES !</h1>
                 </div>
                 <div class="col-3">
                     <img src="public/images/header_star.png" alt="star-picture" width="250px">
                 </div>
             </div>
         </div>
-        <nav class="nav justify-content-evenly nav_background_color">
-            <a class="nav-item nav-link link-body-emphasis fw-bold fs-5" href="#apprenants">Apprenants</a>
-            <a class="nav-item nav-link link-body-emphasis fw-bold fs-5" href="#formateurs">Formateurs</a>
-        </nav>
     </header>
