@@ -28,14 +28,33 @@ function getTeachersCharacters(){
     return $teachersCharacters;
 }
 
-function insertVotes(){
-    // $query_insertvotes = $GLOBALS["pdo"]->query("INSERT INTO vote (id_cand, id_cat, email) VALUES ('$_POST['']', '$_POST[''], $_POST['candidat_email']) WHERE ;");
-    $insertvotes = $GLOBALS["pdo"]->prepare($query_insertvotes);
-    $insertvotes->execute();
-    return true;
+function checkEmail($email){
+    $query_checkemail = $GLOBALS["pdo"]->prepare("SELECT email FROM vote WHERE email = ? LIMIT 1;");
+    echo "<pre>";
+    var_dump($email['candidat_email']);
+    echo "</pre>";
+    //$email['candidat_email']="jhgvjghfjfgv@jhvjhvjv.fr";
+    $query_checkemail->execute([$email['candidat_email']]);
+    $checkemail = $query_checkemail->fetchAll(PDO::FETCH_ASSOC);
+    echo "<pre>";
+    var_dump($checkemail);
+    echo "</pre>";
+        if(count($checkemail) == 0){
+            return true;
+        }else{
+            return false;
+        }
 }
 
-    // $ajout_id_cat = ("INSERT INTO cat_fav (id_fav, id_cat) VALUES (:id_favori, :cat);");
-    // $arrayParam1 = array(':id_favori'=>$last_id_fav, ':cat'=>$cat);
-    // $result_id_fav = $pdo->prepare($ajout_id_cat);
-    // $result_id_fav->execute($arrayParam1);
+function insertVotes($votes){
+    foreach($votes['votes'] as $key => $value){
+        $query_insertvotes = $GLOBALS["pdo"]->prepare("INSERT INTO vote (id_cand, id_cat, email) VALUES (?, ?, ?)");
+        $query_insertvotes->execute([intval($value), intval($key), $votes['candidat_email']]);
+    }
+}
+
+function getVotes(){
+    $query_votes = $GLOBALS["pdo"]->query("SELECT * FROM vote ");
+    $votes = $query_votes->fetchAll(PDO::FETCH_ASSOC);
+    return $votes;
+}

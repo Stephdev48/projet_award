@@ -1,4 +1,4 @@
-<form action="index.php?page=results" method="post">
+<form action="index.php?page=confirmation" method="post">
 
     <div class="container mt-5">
         <h1 id="apprenants" class="text-center text-danger">Apprenants</h1>
@@ -18,7 +18,7 @@
                                     echo "<span class='m-5'>
                                             <img src='".$student['url_avatar']."' alt='avatar' width='110px'/>
                                             <div class='d-flex flex-row justify-content-between'>
-                                                <input type='radio' name='".$studentCharacter['nom_cat_bdd']."' value='".$student['id_cand']."'>
+                                                <input type='radio' name='votes[".$studentCharacter['id_cat']."]' value='".$student['id_cand']."' style='height:20px; width:30px;'>
                                                 <h2 class='fs-4'>".$student['prenom']."</h2>
                                             </div>
                                         </span>";
@@ -48,7 +48,7 @@
                         echo "<span class='m-5 d-flex flex-column justify-content-center'>
                                 <img src='".$teacher['url_avatar']."' alt='avatar' width='110px'/>
                                 <div class='d-flex flex-row justify-content-between'>
-                                    <input type='radio' name='".$teacherCharacter['nom_cat_bdd']."' value='".$teacher['id_cand']."'>
+                                    <input type='radio' name='votes[".$teacherCharacter['id_cat']."]' value='".$teacher['id_cand']."' style='height:30px; width:20px;>
                                     <h2 class='fs-4'>".$teacher['prenom']."</h2>
                                 </div></span>";
                     }   

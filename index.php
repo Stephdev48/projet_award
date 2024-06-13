@@ -12,8 +12,11 @@ switch ($_GET['page']){
     case 'board' :
         boardDisplay();
         break ;
-     case 'results' :
+     case 'results':
         resultsDisplay();
+        break ;
+    case 'confirmation':
+        confirmationDisplay();
         break ;
     default: 
         throw new Exception ('Paramètre invalide !');
