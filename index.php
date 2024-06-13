@@ -18,6 +18,13 @@ switch ($_GET['page']){
     case 'confirmation':
         confirmationDisplay();
         break ;
+    case 'admin':
+        adminDisplay();
+        break ;
+    case 'togglevote':
+        toggleVote($_GET['statut'], $_GET['email']);
+        break;
+
     default: 
         throw new Exception ('Paramètre invalide !');
 }

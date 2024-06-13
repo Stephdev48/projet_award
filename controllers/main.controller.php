@@ -41,7 +41,17 @@ function confirmationDisplay(){
 }
 
 function adminDisplay(){
+    $votes = getVotes();
     require 'views/header_confirmation.view.php';
     require 'views/admin.view.php';
     require 'views/footer.view.php';
+}
+
+function toggleVote($statut, $email){
+    toggleStatut($statut, $email);
+    $votes = getVotes();
+    require 'views/header_confirmation.view.php';
+    require 'views/admin.view.php';
+    require 'views/footer.view.php';
+    // header('Location :index.php?page=admin');
 }

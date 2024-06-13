@@ -30,15 +30,15 @@ function getTeachersCharacters(){
 
 function checkEmail($email){
     $query_checkemail = $GLOBALS["pdo"]->prepare("SELECT email FROM vote WHERE email = ? LIMIT 1;");
-    echo "<pre>";
-    var_dump($email['candidat_email']);
-    echo "</pre>";
+    // echo "<pre>";
+    // var_dump($email['candidat_email']);
+    // echo "</pre>";
     //$email['candidat_email']="jhgvjghfjfgv@jhvjhvjv.fr";
     $query_checkemail->execute([$email['candidat_email']]);
     $checkemail = $query_checkemail->fetchAll(PDO::FETCH_ASSOC);
-    echo "<pre>";
-    var_dump($checkemail);
-    echo "</pre>";
+    // echo "<pre>";
+    // var_dump($checkemail);
+    // echo "</pre>";
         if(count($checkemail) == 0){
             return true;
         }else{
@@ -54,7 +54,13 @@ function insertVotes($votes){
 }
 
 function getVotes(){
-    $query_votes = $GLOBALS["pdo"]->query("SELECT * FROM vote ");
+    $query_votes = $GLOBALS["pdo"]->query("SELECT * FROM vote GROUP BY email");
     $votes = $query_votes->fetchAll(PDO::FETCH_ASSOC);
     return $votes;
+}
+
+function toggleStatut($statut, $email){
+    $query_toggle = $GLOBALS["pdo"]->prepare("UPDATE vote SET statut=? WHERE email=?");
+    $query_toggle->execute([$statut, $email]);
+    return true;
 }
